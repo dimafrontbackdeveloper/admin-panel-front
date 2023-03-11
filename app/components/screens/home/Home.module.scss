@@ -1,0 +1,7 @@
+.heading {
+	@apply text-xl text-black gdark:text-white mb-5;
+}
+
+.catalog {
+	@apply grid gap-8 grid-cols-6 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-1;
+}

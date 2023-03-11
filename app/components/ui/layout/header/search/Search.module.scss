@@ -1,0 +1,24 @@
+@import '../../../../../assets/styles/mixins';
+
+.search_top {
+	@apply relative 2xl:m-auto;
+	max-width: 600px;
+
+	@media (max-width: 1440px) {
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+
+	.result {
+		@apply flex flex-wrap absolute z-20 p-5 mt-3 w-full rounded-lg gdark:bg-zinc-900 gdark:text-white;
+		background-color: #ebecf4;
+		left: -144px;
+		width: 600px;
+		@include shadow();
+
+		> a {
+			@apply mr-4 last:mr-0;
+			width: 23%;
+		}
+	}
+}
